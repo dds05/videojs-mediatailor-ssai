@@ -11,13 +11,19 @@ import { AdsOptions, VideoJSPlayer } from "./types";
         const tracking_url = options?.trackingUrl;
         const disableBeacon = options?.disableBeacon || false;
 
+        let trackingResponse:any;
 
         //Fetch Tracking Url
-        const res = await fetch(tracking_url);
-        const data = await res.json();
+        try{
+            const res = await fetch(tracking_url);
+            const data = await res.json();
+            trackingResponse=data;
+        }catch(e){  
+            console.log('Error occured while fetching tracking url : ',e);
+        }
 
         //Retrieve Tracking Url Information
-        let advertisementPodsData = data['avails']
+        let advertisementPodsData = trackingResponse?.['avails']
         const progressControl = player.controlBar?.getChild('ProgressControl')
         const seekBarEl = progressControl?.getChild('SeekBar')?.el();
 
