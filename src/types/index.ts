@@ -12,7 +12,7 @@ interface AdsOptions extends Player {
 
 type VideoJSPlayer = Player & Component & {
     removeChild: any;
-    theme?:(options: AdsOptions)=>void;
+    vjs_mediatailor_sgai?:(options: AdsOptions)=>void;
     controlBar?: ControlBar & {
         removeChild: any
     }
