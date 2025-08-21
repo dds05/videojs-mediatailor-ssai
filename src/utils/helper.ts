@@ -1,25 +1,26 @@
-const parseSvgString = (svgString) => {
-    const parsedDoc = new DOMParser().parseFromString(svgString, 'image/svg+xml')
-    const svgElement = parsedDoc?.querySelector('svg');
-    return svgElement
+function throttle(fn, delay) {
+  let timeout = null;
+  let lastUpdated = null;
+  return function (...args) {
+    if (!lastUpdated) {
+      fn.apply(this, args);
+      lastUpdated = Date.now();
+    } else {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        if (Date.now() - lastUpdated >= delay) {
+          fn.apply(this, args);
+          lastUpdated = Date.now();
+        }
+      }, delay - (Date.now() - lastUpdated))
+    }
+  }
 }
 
-const SVG_NS = "http://www.w3.org/2000/svg";
-function createSVGWithUse(iconId, viewBox = "0 0 48 48") {
-  const svg = document.createElementNS(SVG_NS, "svg");
-  svg.setAttribute("viewBox", viewBox);
-  svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
-  const use = document.createElementNS(SVG_NS, "use");
-  use.setAttributeNS(null, "href", iconId);
-  svg.appendChild(use);
-  return { svg, use };
-}
-function injectSVG(targetElement, iconId) {
-  if (!targetElement) return null;
-  targetElement.classList.add('vjs-svg-icon');
-  const { svg, use } = createSVGWithUse(iconId);
-  targetElement.appendChild(svg);
-  return use;
+function formatTime(seconds) {
+  const mins = Math.floor(seconds / 60);
+  const secs = Math.floor(seconds % 60);
+  return `${mins}:${secs.toString().padStart(2, '0')}`;
 }
 
-export { parseSvgString , injectSVG , createSVGWithUse}
+export { throttle, formatTime }

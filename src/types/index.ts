@@ -3,18 +3,20 @@ import type ControlBar from 'video.js/dist/types/control-bar/control-bar'
 
 import type Component from 'video.js/dist/types/component'
 
-interface ThemeOptions extends Player {
-    skin?: 'slate' | 'spaced' | 'sleek' | 'zen';
-    color?: string;
+interface AdsOptions extends Player {
+    trackingUrl: string;
+    disableBeacon?: boolean;
+    skipAds?:boolean
+    adEventCallback?: Function
 }
 
 type VideoJSPlayer = Player & Component & {
     removeChild: any;
-    theme?:(options: ThemeOptions)=>void;
+    theme?:(options: AdsOptions)=>void;
     controlBar?: ControlBar & {
         removeChild: any
     }
 };
 
 
-export type { VideoJSPlayer, ThemeOptions }
+export type { VideoJSPlayer, AdsOptions }
