@@ -100,7 +100,7 @@ import { AdsOptions, VideoJSPlayer } from "./types";
         }, 1000));
 
         const adContainer = document.createElement('div');
-        adContainer.className = 'ssai-ad-container'
+        adContainer.className = 'vjs-sgai-ad-container'
         const adCounter = document.createElement('div');
         adCounter.className = 'ad-counter';
         const adTimer = document.createElement('div');

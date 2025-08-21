@@ -25,9 +25,9 @@ Supported Beacon Events : ['_breakStart_', '_breakEnd_', '_firstQuartile_', '_th
 ```
 npm i videojs-mediatailor-sgai
 ```
+<br>
 
-
-💡 Note: Make sure the stitched ad asset is loaded into the player before calling the below function
+>💡 Note: Ensure that the manifest URL of the stitched ad asset is called, and the asset is loaded into the player before calling the `vjs_mediatailor_sgai` fn as shown below :
 ```
 player.one('loadeddata',()= {
    player.vjs_mediatailor_sgai({
