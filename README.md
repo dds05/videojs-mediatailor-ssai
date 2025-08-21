@@ -1,9 +1,11 @@
 ## Videojs MediaTailor SGAI Integration 
 Video.js plugin to easily integrate AWS MediaTailor's Server Guided Ad Integration (SGAI). <br/> <br/>
 
+<img width="799" height="449" alt="sgai" src="https://github.com/user-attachments/assets/42c6a920-88a1-47df-864f-c92fce9defc6" />
+
+
 
 ## What does this plugin do?
-
 
 * Based on the tracking url response , it places yellow markers on the seekbar indicating start of the ad-pod.
 
@@ -17,12 +19,15 @@ Supported Beacon Events : ['_breakStart_', '_breakEnd_', '_firstQuartile_', '_th
 * Disables seekbar and prevent user to skip when current advertisement is playing.
 
 
+
 ## Installation and Usage.
 
 ```
 npm i videojs-mediatailor-sgai
 ```
 
+
+💡 Note: Make sure the stitched ad asset is loaded into the player before calling the below function
 ```
 player.one('loadeddata',()= {
    player.vjs_mediatailor_sgai({
@@ -39,4 +44,5 @@ player.one('loadeddata',()= {
 | **adEventCallback** | `Function` | ❌ No | Triggers when an advertisement beacon is fired|
 | **skipAds** | `Boolean` | ❌ No | Allows to skip advetisement  | 
 | **disableBeacon** | `Boolean` | ❌ No | Disables advertisement beacons | 
+
 
