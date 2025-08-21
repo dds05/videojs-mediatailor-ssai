@@ -147,7 +147,6 @@ import { AdsOptions, VideoJSPlayer } from "./types";
                 let mapKey = `${startTimeInSeconds}_${eventType}`;
                 let podEventStatus = trackMap.get(`pod-${podIdx}`) || []
 
-                console.log(podEventStatus);
                 if (timestamp >= startTimeInSeconds && !podEventStatus.includes(mapKey)) {
                     podEventStatus.push(mapKey)
                     trackMap.set(`pod-${podIdx}`, podEventStatus);
