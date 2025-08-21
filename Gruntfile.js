@@ -79,7 +79,7 @@ module.exports = function (grunt) {
       index: {
           options: {
               banner: 'import "./style.css";\n', // Add CSS import at the top
-              footer: '\nexport { default } from "./videojs-mediatailor-sgai.min.js";' // Add JS export at the bottom
+              footer: '\nimport "./videojs-mediatailor-sgai.min.js";' // Add JS export at the bottom
           },
           src: [], // No need for actual content, just headers & footers
           dest: 'dist/index.js'

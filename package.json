@@ -1,6 +1,6 @@
 {
   "name": "videojs-mediatailor-sgai",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Video.js Plugin To Integrate AWS Mediatailor's Server Guided Ad Integration (SGAI)",
   "main": "index.js",
   "module": "dist/index.js",
