@@ -1,21 +1,19 @@
 {
-  "name": "videojs-theme-kit",
+  "name": "videojs-mediatailor-sgai",
   "version": "0.0.15",
-  "description": "Video.js plugin to easily customize and apply skins to player",
+  "description": "Video.js Plugin To Integrate AWS Mediatailor's Server Guided Ad Integration (SGAI)",
   "main": "index.js",
   "module": "dist/index.js",
   "style": "dist/style.css",
-  "repository": "https://github.com/dds05/videojs-theme-kit",
+  "repository": "https://github.com/dds05/videojs-mediatailor-sgai",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "videojs",
+    "videojs-mediatailor-sgai",
+    "videojs-ad-integration",
     "videojs-plugin",
-    "videojs-themes",
-    "videojs-theme-kit",
-    "videojs-customisation",
-    "videojs-skin",
     "video.js"
   ],
   "author": "Daman",

@@ -20,14 +20,14 @@ module.exports = function (grunt) {
           external: ['video.js'],
           output: {
             format: 'iife',
-            name: 'VideoJSThemePlugin',
+            name: 'VideoJSMediaTailorSGAI',
             globals: {
               'video.js': 'videojs'
             }
           }
         },
         files: {
-          'dist/videojs-skin.js': 'src/videojs-skin.ts'
+          'dist/videojs-mediatailor-sgai.js': 'src/videojs-mediatailor-sgai.ts'
         }
       },
       minified: {
@@ -48,7 +48,7 @@ module.exports = function (grunt) {
           }
         },
         files: {
-          'dist/videojs-skin.min.js': 'src/videojs-skin.ts'
+          'dist/videojs-mediatailor-sgai.min.js': 'src/videojs-mediatailor-sgai.ts'
         }
       },
       dts: {
@@ -59,7 +59,7 @@ module.exports = function (grunt) {
           }
         },
         files: {
-          'dist/videojs-skin.d.ts': 'src/types/index.ts'
+          'dist/videojs-mediatailor-sgai.d.ts': 'src/types/index.ts'
         }
       }
     },
@@ -71,7 +71,7 @@ module.exports = function (grunt) {
           outputStyle: 'compressed'
         },
         files: {
-          'dist/style.css': 'src/styles/videojs-skin.scss'
+          'dist/style.css': 'src/styles/index.scss'
         }
       }
     },
@@ -79,7 +79,7 @@ module.exports = function (grunt) {
       index: {
           options: {
               banner: 'import "./style.css";\n', // Add CSS import at the top
-              footer: '\nexport { default } from "./videojs-skin.min.js";' // Add JS export at the bottom
+              footer: '\nexport { default } from "./videojs-mediatailor-sgai.min.js";' // Add JS export at the bottom
           },
           src: [], // No need for actual content, just headers & footers
           dest: 'dist/index.js'

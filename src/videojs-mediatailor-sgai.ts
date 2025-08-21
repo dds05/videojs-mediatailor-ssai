@@ -1,6 +1,6 @@
 import videojs from "video.js";
-import { throttle , formatTime} from "./utils";
-import { AdsOptions, VideoJSPlayer } from "../types";
+import { throttle , formatTime} from "./utils/helper";
+import { AdsOptions, VideoJSPlayer } from "./types";
 
 (function (videojs) {
     const MediaTailorAdIntegration = async function (this: VideoJSPlayer, options:AdsOptions) {
