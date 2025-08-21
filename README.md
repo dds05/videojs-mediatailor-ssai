@@ -46,3 +46,12 @@ player.one('loadeddata',()= {
 | **disableBeacon** | `Boolean` | ❌ No | Disables advertisement beacons | 
 
 
+
+<br>
+
+
+## Have a feature request / suggestion?
+Feel free to raise the issue or reach out to me on damandeep.in@gmail.com 
+
+
+
