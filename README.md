@@ -1,6 +1,10 @@
 ## Videojs MediaTailor SGAI Integration 
 Video.js plugin to easily integrate AWS MediaTailor's Server Guided Ad Integration (SGAI). <br/> <br/>
 
+For more information on mediatailor sgai integration refer to the aws official documentation : https://docs.aws.amazon.com/mediatailor/latest/ug/server-guided.html
+
+<br>
+
 <img width="799" height="449" alt="sgai" src="https://github.com/user-attachments/assets/42c6a920-88a1-47df-864f-c92fce9defc6" />
 
 
