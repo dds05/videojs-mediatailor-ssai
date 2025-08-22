@@ -4,12 +4,13 @@ Video.js plugin to easily integrate AWS MediaTailor's Server Guided Ad Integrati
 <img width="799" height="449" alt="sgai" src="https://github.com/user-attachments/assets/42c6a920-88a1-47df-864f-c92fce9defc6" />
 
 
+<br>
 
-## What does this plugin do?
+## 🗒️ What does this plugin do?
 
 * Based on the tracking url response , it places yellow markers on the seekbar indicating start of the ad-pod.
 
-* Shows the ad-counter with remaining timer on the top left of the video.
+* Shows the ad-counter with remaining timer for each individual ad on the top left of the video.
 
 * Advetisement Beaconing of selective events based on tracking url response. <br>
 Supported Beacon Events : ['_breakStart_', '_breakEnd_', '_firstQuartile_', '_thirdQuartile_', '_midpoint_', '_impression_', '_complete_']
@@ -18,9 +19,9 @@ Supported Beacon Events : ['_breakStart_', '_breakEnd_', '_firstQuartile_', '_th
 
 * Disables seekbar and prevent user to skip when current advertisement is playing.
 
+<br>
 
-
-## Installation and Usage.
+## ⚙️ Installation and Usage.
 
 ```
 npm i videojs-mediatailor-sgai
@@ -50,8 +51,9 @@ player.one('loadeddata',()= {
 <br>
 
 
-## Have a feature request / suggestion?
+## 💬 Have a feature request / suggestion?
 Feel free to raise the issue or reach out to me on damandeep.in@gmail.com 
+
 
 
 
