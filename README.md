@@ -1,7 +1,6 @@
-<a href="https://www.npmjs.com/package/videojs-mediatailor-sgai"><img src="https://nodei.co/npm/videojs-mediatailor-sgai.svg"></a>
 
 ## Videojs MediaTailor SGAI Integration 
-Video.js plugin to easily integrate AWS MediaTailor's Server Guided Ad Integration (SGAI). <br/> <br/>
+Video.js plugin to easily integrate AWS MediaTailor's Server Side Ad Integration (SSAI). <br/> <br/>
 
 For more information on mediatailor sgai integration refer to the aws official documentation : https://docs.aws.amazon.com/mediatailor/latest/ug/server-guided.html
 
@@ -59,6 +58,7 @@ player.one('loadeddata',()= {
 
 ## 💬 Have a feature request / suggestion?
 Feel free to raise the issue or reach out to me on damandeep.in@gmail.com 
+
 
 
 
