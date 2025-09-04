@@ -1,12 +1,12 @@
 <a href="https://nodei.co/npm/videojs-mediatailor-ssai/"><img src="https://nodei.co/npm/videojs-mediatailor-ssai.svg"></a>
-## Videojs MediaTailor SGAI Integration 
+## Videojs MediaTailor SSAI Integration 
 Video.js plugin to easily integrate AWS MediaTailor's Server Side Ad Integration (SSAI). <br/> <br/>
 
-For more information on mediatailor sgai integration refer to the aws official documentation : https://docs.aws.amazon.com/mediatailor/latest/ug/server-guided.html
+For more information on mediatailor ssai integration refer to the aws official documentation : https://docs.aws.amazon.com/mediatailor/latest/ug/server-guided.html
 
 <br>
 
-<img width="799" height="449" alt="sgai" src="https://github.com/user-attachments/assets/42c6a920-88a1-47df-864f-c92fce9defc6" />
+<img width="799" height="449" alt="ssai" src="https://github.com/user-attachments/assets/42c6a920-88a1-47df-864f-c92fce9defc6" />
 
 
 <br>
@@ -39,7 +39,7 @@ player.one('loadeddata',()= {
    player.vjs_mediatailor_ssai({
         trackingUrl: 'TRACKING URL from mediatailor'
     })
-}
+})
 ```
 
 ## 👉🏻 Options
