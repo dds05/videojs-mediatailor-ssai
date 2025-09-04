@@ -1,4 +1,4 @@
-
+<a href="https://nodei.co/npm/videojs-mediatailor-ssai/"><img src="https://nodei.co/npm/videojs-mediatailor-ssai.svg"></a>
 ## Videojs MediaTailor SGAI Integration 
 Video.js plugin to easily integrate AWS MediaTailor's Server Side Ad Integration (SSAI). <br/> <br/>
 
@@ -58,6 +58,7 @@ player.one('loadeddata',()= {
 
 ## 💬 Have a feature request / suggestion?
 Feel free to raise the issue or reach out to me on damandeep.in@gmail.com 
+
 
 
 
