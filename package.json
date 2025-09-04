@@ -1,6 +1,6 @@
 {
   "name": "videojs-mediatailor-ssai",
-  "version": "0.0.6",
+  "version": "0.0.9",
   "description": "Video.js Plugin To Integrate AWS Mediatailor's Server Side Ad Integration (SSAI)",
   "main": "index.js",
   "module": "dist/index.js",
