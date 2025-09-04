@@ -1,18 +1,18 @@
 {
-  "name": "videojs-mediatailor-sgai",
+  "name": "videojs-mediatailor-ssai",
   "version": "0.0.6",
   "description": "Video.js Plugin To Integrate AWS Mediatailor's Server Guided Ad Integration (SGAI)",
   "main": "index.js",
   "module": "dist/index.js",
   "style": "dist/style.css",
-  "repository": "https://github.com/dds05/videojs-mediatailor-sgai",
+  "repository": "https://github.com/dds05/videojs-mediatailor-ssai",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "videojs",
-    "videojs-mediatailor-sgai",
-    "aws-mediatailor-sgai",
+    "videojs-mediatailor-ssai",
+    "aws-mediatailor-ssai",
     "server-guided-ad-integration",
     "videojs-ad-integration",
     "videojs-plugin",
