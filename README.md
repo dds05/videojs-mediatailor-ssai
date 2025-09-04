@@ -29,14 +29,14 @@ Supported Beacon Events : ['_breakStart_', '_breakEnd_', '_firstQuartile_', '_th
 ## ⚙️ Installation and Usage.
 
 ```
-npm i videojs-mediatailor-sgai
+npm i videojs-mediatailor-ssai
 ```
 <br>
 
->💡 Note: Ensure that the manifest URL of the stitched ad asset is called, and the asset is loaded into the player before calling the `vjs_mediatailor_sgai` fn as shown below :
+>💡 Note: Ensure that the manifest URL of the stitched ad asset is called, and the asset is loaded into the player before calling the `vjs_mediatailor_ssai` fn as shown below :
 ```
 player.one('loadeddata',()= {
-   player.vjs_mediatailor_sgai({
+   player.vjs_mediatailor_ssai({
         trackingUrl: 'TRACKING URL from mediatailor'
     })
 }

@@ -200,5 +200,5 @@ import { AdsOptions, VideoJSPlayer } from "./types";
             handlePreventSkip();
     }
 
-    videojs.registerPlugin('vjs_mediatailor_sgai', MediaTailorAdIntegration);
+    videojs.registerPlugin('vjs_mediatailor_ssai', MediaTailorAdIntegration);
 })(videojs);
