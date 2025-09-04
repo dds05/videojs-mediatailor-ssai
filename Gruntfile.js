@@ -20,14 +20,14 @@ module.exports = function (grunt) {
           external: ['video.js'],
           output: {
             format: 'iife',
-            name: 'VideoJSMediaTailorSGAI',
+            name: 'VideoJSMediaTailorSSAI',
             globals: {
               'video.js': 'videojs'
             }
           }
         },
         files: {
-          'dist/videojs-mediatailor-sgai.js': 'src/videojs-mediatailor-sgai.ts'
+          'dist/videojs-mediatailor-ssai.js': 'src/videojs-mediatailor-ssai.ts'
         }
       },
       minified: {
@@ -48,7 +48,7 @@ module.exports = function (grunt) {
           }
         },
         files: {
-          'dist/videojs-mediatailor-sgai.min.js': 'src/videojs-mediatailor-sgai.ts'
+          'dist/videojs-mediatailor-ssai.min.js': 'src/videojs-mediatailor-ssai.ts'
         }
       },
       dts: {
@@ -59,7 +59,7 @@ module.exports = function (grunt) {
           }
         },
         files: {
-          'dist/videojs-mediatailor-sgai.d.ts': 'src/types/index.ts'
+          'dist/videojs-mediatailor-ssai.d.ts': 'src/types/index.ts'
         }
       }
     },
@@ -79,7 +79,7 @@ module.exports = function (grunt) {
       index: {
           options: {
               banner: 'import "./style.css";\n', // Add CSS import at the top
-              footer: '\nimport "./videojs-mediatailor-sgai.min.js";' // Add JS export at the bottom
+              footer: '\nimport "./videojs-mediatailor-ssai.min.js";' // Add JS export at the bottom
           },
           src: [], // No need for actual content, just headers & footers
           dest: 'dist/index.js'
