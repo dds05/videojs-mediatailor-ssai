@@ -35,7 +35,7 @@ npm i videojs-mediatailor-ssai
 
 >💡 Note: Ensure that the manifest URL of the stitched ad asset is called, and the asset is loaded into the player before calling the `vjs_mediatailor_ssai` fn as shown below :
 ```
-player.one('loadeddata',()= {
+player.one('loadeddata',() => {
    player.vjs_mediatailor_ssai({
         trackingUrl: 'TRACKING URL from mediatailor'
     })
@@ -58,6 +58,7 @@ player.one('loadeddata',()= {
 
 ## 💬 Have a feature request / suggestion?
 Feel free to raise the issue or reach out to me on damandeep.in@gmail.com 
+
 
 
 
